@@ -1,0 +1,41 @@
+<html>
+<head>
+
+</head>
+<body>
+    <center>
+	<h2>Change color on button click:</h2>
+	<button onclick='changeImage()'>Change colour</button><br><br>
+	<div>
+	    <img onclick="changeImage()"  src='C:\Users\admin\java_script_programs\pictures\red.png' id='myImg' width=100 height=100>
+	</div>
+	
+	
+	
+	<script>
+        const img = document.getElementById('myImg');
+        let currentImgIdx = 1;
+        const images = [ 
+            'C:/Users/admin/java_script_programs/pictures/red.png',
+            'C:/Users/admin/java_script_programs/pictures/blue.png',
+            'C:/Users/admin/java_script_programs/pictures/green.png',
+            'C:/Users/admin/java_script_programs/pictures/yellow.png',
+            'C:/Users/admin/java_script_programs/pictures/pink.png'
+            
+        ]; 
+        
+       
+        function changeImage(){
+            if(currentImgIdx >= images.length){
+                currentImgIdx = 0;
+
+            }
+            img.src = images[currentImgIdx];
+            currentImgIdx++;
+           
+        }
+        document.addEventListener
+	</script>
+    </center>
+</body>
+</html>

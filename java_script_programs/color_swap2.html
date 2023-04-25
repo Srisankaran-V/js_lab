@@ -1,0 +1,31 @@
+<html>
+<head>
+
+</head>
+<body background='C:/Users/admin/java_script_programs/pictures/red.png'>
+	<script>
+        const img = document.body;
+        let currentImgIdx = 1;
+        const images = [ 
+            'C:/Users/admin/java_script_programs/pictures/red.png',
+            'C:/Users/admin/java_script_programs/pictures/blue.png',
+            'C:/Users/admin/java_script_programs/pictures/green.png',
+            'C:/Users/admin/java_script_programs/pictures/yellow.png',
+            'C:/Users/admin/java_script_programs/pictures/pink.png'
+            
+        ]; 
+        
+       
+        function changeImage(){
+            if(currentImgIdx >= images.length){
+                currentImgIdx =0 ;
+
+            }
+            img.background = images[currentImgIdx];
+            currentImgIdx++;
+           
+        }
+        document.addEventListener("click",changeImage);
+	</script>
+</body>
+</html>
