@@ -1,0 +1,67 @@
+<html lang="en">
+    <head>
+        <title>products lists</title>
+        <script src="assignment2_try1_js.js"></script>
+
+    </head>
+    <body><center>
+        <h2>PRODUCTS</h2>
+        <button id="addbtn">add</button>
+        <button id="deletebtn">delete</button>
+        <button id="insertBeforebtn">insert before</button>
+        <button id="insertAfterbtn">insert after</button><br><br>
+        <div class="form" id="mainDiv">
+            <div id="productidDiv">
+                <label>ProductId *</label>
+                <input id="productIdinput" type="number" placeholder="1234567890"><br>
+                <div class="errormsg">
+                    *Product id is required
+                </div><br>
+            </div>
+            <div id="productnameDiv">    
+                <label>Name *</label>
+                <input id="productNameinput" type="text" placeholdee="enter your name"><br>
+                <div class="errormsg">
+                    *Name is required
+                </div><br>
+            </div>
+            <div id="priceDiv">
+                <label>Price</label>
+                <input id="priceinput" type="number" placeholder="10000$"><br>
+                <div clas="errormsg">
+                    *price is required
+                </div><br>
+            </div>
+            <div id="imageDiv">
+                <lable for="imageinput">image</lable>
+                <input id="imageinput" type="file" accept="image/*"><br>
+                <div class="errormsg">
+                    *image is required
+                </div>
+            </div>
+            <div id="descriptionDiv">
+                <label>enter the specs</label><br>
+                <textarea id="descriptioninput" row="5" cols="20" placeholder="enter product description"></textarea><br><br>
+            </div>
+            <div id="uploadDiv">
+                <button id="uploadbtn">upload</button>
+                <label>*image is required</label>
+            </div>
+            <div id="fileDiv">
+                <p id="fileDetails">
+                    <span class = "fileName"></span>
+                    <span class="fileSize"></span>
+                </p>
+
+            </div>
+            <div id="saveDiv">
+                <button id="savebtn">save</button><br>
+            </div>
+            <div>
+                <h2 id="heading">product list</h2>
+                <div id="nodata">no product available</div>
+            </div>
+        </div>
+        </center>
+    </body>
+</html>
